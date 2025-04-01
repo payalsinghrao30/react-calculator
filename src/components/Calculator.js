@@ -5,7 +5,7 @@ export default function Calculator() {
   const [input, setInput] = useState("0");
   const [operator, setOperator] = useState(null);
   const [previousInput, setPreviousInput] = useState(null);
-
+  // handle number
   const handleNumber = (num) => {
     setInput(input === "0" ? num : input + num);
   };
